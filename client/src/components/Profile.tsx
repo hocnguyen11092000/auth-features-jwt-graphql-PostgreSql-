@@ -6,7 +6,9 @@ const Profile = () => {
   if (loading) return <h3 style={{ textAlign: "center" }}>Loading...</h3>;
   if (error)
     return (
-      <h3 style={{ textAlign: "center" }}>Please login to see profile...</h3>
+      <h3 style={{ textAlign: "center" }}>
+        Please login to see your profile...
+      </h3>
     );
 
   return <h1 style={{ textAlign: "center" }}>{`${data?.hello}`}</h1>;
