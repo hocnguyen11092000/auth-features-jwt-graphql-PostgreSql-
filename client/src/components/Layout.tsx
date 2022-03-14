@@ -8,10 +8,13 @@ const Layout = () => {
   const [logoutServer, _] = useLogoutMutation();
 
   const logout = async () => {
-    logoutClient();
-    await logoutServer({
-      variables: { userId: jwtManager.getUserId()?.toString() as string },
-    });
+    const checkLogout = window.confirm("Logout?");
+    if (checkLogout) {
+      logoutClient();
+      await logoutServer({
+        variables: { userId: jwtManager.getUserId()?.toString() as string },
+      });
+    }
   };
 
   return (
