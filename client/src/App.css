@@ -1,0 +1,108 @@
+.nav {
+  padding: 10px 0;
+  background-color: #75b798;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav a {
+  text-decoration: none;
+  margin-left: 15px;
+  color: #333;
+  border-radius: 5px;
+}
+
+.nav a.active {
+  padding: 5px 8px;
+  background-color: #fff;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.container {
+  margin: 20px;
+  padding: 20px;
+}
+
+.container ul li.item {
+  list-style: none;
+  background-color: #d2f4ea;
+  margin: 10px 0;
+  max-width: 500px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 65vh;
+}
+
+.form-container .form-wrapper {
+  padding: 20px;
+  background-color: #d2f4ea;
+  color: #333;
+  border-radius: 10px;
+  min-width: 400px;
+}
+
+.form-container .form-wrapper h1 {
+  margin: 10px 0;
+  text-align: center;
+  font-weight: 500;
+}
+
+.form-group input {
+  padding: 10px 12px;
+  outline: none;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+  border-radius: 5px;
+  min-width: 320px;
+}
+
+.form-group button {
+  margin: 20px 0;
+  border: none;
+  outline: none;
+  background-color: #75b798;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.logout {
+  margin-left: 15px;
+  cursor: pointer;
+}
